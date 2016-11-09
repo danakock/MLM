@@ -18,7 +18,7 @@ filename = 'housing.csv'
 names=['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RAD', 'TAX', 'PTRATIO',
 'B', 'LSTAT', 'MEDV']
 dataset = read_csv(filename, delim_whitespace=True, names=names)
-'''
+
 # shape
 print(dataset.shape)
 # types 
@@ -57,7 +57,7 @@ ax.set_yticks(ticks)
 ax.set_xticklabels(names)
 ax.set_yticklabels(names)
 plt.show()
-'''
+
 # Split-out validation dataset
 array = dataset.values
 X = array[:,0:13]
